@@ -36,7 +36,7 @@ img{
     color: hsl(228, 12%, 48%);
     margin-inline-start: -0.5rem;
     margin-block: 2rem 1.5rem;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     letter-spacing: .5ch;
 }
 .main__h1{
@@ -48,7 +48,7 @@ img{
     font-weight: 500;
     font-size: 0.875rem;
     margin-block: 1rem;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 .main__price-container{
     display: flex;
@@ -62,6 +62,7 @@ img{
 }
 .main__ogprice{
     color: hsl(228, 12%, 48%);
+    font-size: 0.75rem;
     text-decoration: line-through;
     margin-inline: 1rem;
 }
@@ -75,7 +76,7 @@ img{
     margin-inline: auto;
     margin-block-start: 1.5rem;
     margin-block-end: 2rem;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     align-items: center;
