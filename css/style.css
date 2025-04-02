@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Fraunces";
+    font-family: "Montserrat";
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    max-width: 700px;
+    padding-inline: 1.5rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.header__img-desktop{
+    display: none;
+}
+
+.main__perfume{
+    color: hsl(228, 12%, 48%);
+    margin-inline-start: -0.5rem;
+    margin-block: 2rem 1.5rem;
+    font-size: 0.875rem;
+    letter-spacing: .5ch;
+}
+.main__h1{
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+}
+.main__description{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 0.875rem;
+    margin-block: 1rem;
+    line-height: 1.4;
+}
+.main__price-container{
+    display: flex;
+    align-items: center;
+}
+.main__price{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+}
+.main__ogprice{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin-inline: 1rem;
+}
+.button{
+    font-family: "Montserrat";
+    font-weight: 600;
+    color: white;
+    border: 0;
+    padding: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    margin-inline: auto;
+    margin-block-start: 1.5rem;
+    margin-block-end: 2rem;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button svg{
+    width: 15px;
+    height: 16px;
+    margin-inline: .5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    body{
+        flex-direction: row;
+    }
+    .header__img-mobile{
+        display: none
+    }
+    .header__img-desktop{
+        display: block;
+        max-width: 300px;
+        max-height: 450px;
+        border-radius: 10px 0 0 10px;
+    }
+    .main{
+        max-width: 300px;
+        min-height: 450px;
+        padding-inline: 2rem;
+        border-radius: 0 10px 10px 0;
+    }
+    .main__perfume{
+
+    }
+    .main__h1{
+        line-height: 1;
+        margin-block-end: 2rem;
+    }
+    .main__description{
+        margin-block: 0 1.75rem;
+    }
+}
